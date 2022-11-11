@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 /**
  * main - start the shell
  * @argc: Counter of arguments received
