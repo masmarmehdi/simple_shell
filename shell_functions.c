@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 /**
  * _signal - block signal of Ctrl + C
  * @s: signal to verify
