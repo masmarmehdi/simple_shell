@@ -1,15 +1,12 @@
-#ifndef _MAIN_H
-#define _MAIN_H
-#define _GNU_SOURCE
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
 #include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
-#include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-#include <unistd.h>
-#include <dirent.h>
-#include <stddef.h>
-#include <string.h>
+#include <sys/stat.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <signal.h>
@@ -18,26 +15,6 @@
 #define BUFSIZE 1024
 #define TOK_BUFSIZE 128
 #define TOK_DELIM " \t\r\n\a"
-
-/* strings functions */
-int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
-char *_strdup(char *str);
-int _strcmp(char *s1, char *s2);
-char *_strcat(char *dest, char *src);
-
-/**
- * struct path - singly linked list
- * @path: string - (malloc'ed string)
- * @next: points to the next node
- * Description: singly linked list node structure
- * for Shell project
- */
-typedef struct path
-{
-	char *path;
-	struct path *next;
-} path_t;
 
 /* Points to an array of pointers to strings called the "environment" */
 extern char **environ;
