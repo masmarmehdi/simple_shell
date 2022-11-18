@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+*.out
+test.c
+betty_report
+hsh
